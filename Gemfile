@@ -12,6 +12,8 @@ end
 
 gem 'jquery-rails'
 
-group :development, :test do
-  gem 'minitest-rails'
+gem 'minitest-rails'
+
+group :test do
+  gem 'minitest-rails-capybara'
 end
