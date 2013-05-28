@@ -11,5 +11,6 @@ Week 1
 ------
 
 * Removed test unit (test directory)
-* Added minitest to the application
+* Added minitest-rails to the application
+* rails g mini_test:install
 * Created feature spec for listing the wishlists
