@@ -1,3 +1,3 @@
 Magpie::Application.routes.draw do
-  match '/lists' => 'lists#index', :as => :lists
+  match '/lists' => 'lists#index'
 end
