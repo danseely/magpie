@@ -1,5 +1,6 @@
 class ListsController < ApplicationController
   def index
-    @lists = ['Music', 'Home']
+    @lists = [WishList.new(name: 'Music'),
+              WishList.new(name: 'Home')]
   end
 end
