@@ -13,5 +13,5 @@ end
 gem 'jquery-rails'
 
 group :development, :test do
-  gem 'minitest'
+  gem 'minitest-rails'
 end
