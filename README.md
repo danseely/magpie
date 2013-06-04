@@ -23,3 +23,16 @@ Week 1
 * Added the view
 * Set the model in the controller
 * Updated the view to display the model
+
+Week 2
+------
+
+* Added factory_girl_rails to the Gemfile
+* Added the wishlist migration and model
+* Created the Wishlist FactoryGirl factory
+* Changed the feature test to use the real model
+* Removed the old Wishlist model and spec
+* Changed list index controller to use real model and made test pass
+* Added test for item count
+* Added test for empty view
+* Added empty view and made test pass
