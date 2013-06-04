@@ -1,3 +1,3 @@
 class Wishlist < ActiveRecord::Base
-  attr_accessible :item_count, :title
+  attr_accessible :item_count, :name
 end

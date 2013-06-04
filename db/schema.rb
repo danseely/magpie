@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130604040456) do
 
   create_table "wishlists", :force => true do |t|
-    t.string   "title"
+    t.string   "name"
     t.integer  "item_count"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
