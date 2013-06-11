@@ -11,6 +11,8 @@ feature 'Signup Feature Test' do
     click_button 'Create User'
 
     new_user = User.last
-    new_user.email.must_eq user.email
+    new_user.email.must_equal user.email
+    new_user.username.must_equal user.username
+    new_user.password.must_equal user.password
   end
 end
