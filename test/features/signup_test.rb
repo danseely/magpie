@@ -8,7 +8,7 @@ feature 'Signup Feature Test' do
     fill_in 'Username', with: user.username
     fill_in 'Password', with: user.password
     fill_in 'Password confirmation', with: user.password
-    click_button 'Create user'
+    click_button 'Create User'
 
     new_user = User.last
     new_user.email.must_eq user.email
