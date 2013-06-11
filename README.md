@@ -36,3 +36,14 @@ Week 2
 * Added test for item count
 * Added test for empty view
 * Added empty view and made test pass
+
+Week 3
+------
+
+* Created failing test with scenario for signing up with valid data
+* Created route, model, migration, controller, and view
+* Finished form for new template
+* Finished scenario for valid user
+* Finished validations for email, username, and password
+* Display error on page if invalid
+* Created show view for a user
