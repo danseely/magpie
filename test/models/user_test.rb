@@ -33,7 +33,16 @@ describe User do
       user.errors[:username].must_include "has already been taken"
     end
 
-    it 'must have a password'
-    it 'must have matching passwords'
+    it 'must have a password' do
+      user.password = ''
+      user.valid?.wont_equal true
+      user.errors[:password].must_include "can't be blank"
+    end
+
+    it 'must have matching passwords' do
+      user.password_confirmation = 'something else'
+      user.valid?.wont_equal true
+      user.errors[:password].must_include "doesn't match confirmation"
+    end
   end
 end
