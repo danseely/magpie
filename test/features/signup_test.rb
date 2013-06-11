@@ -9,6 +9,7 @@ feature 'Signup Feature Test' do
     new_user.email.must_equal user.email
     new_user.username.must_equal user.username
     new_user.password.must_equal user.password
+    current_path.must_equal user_path(new_user)
   end
 
   scenario 'signing up with a duplicate username' do
