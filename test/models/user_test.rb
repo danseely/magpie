@@ -21,8 +21,18 @@ describe User do
       user.valid?.wont_equal true
     end
 
-    it 'must have a username'
-    it 'must have a unique username'
+    it 'must have a username' do
+      user.username = ''
+      user.valid?.wont_equal true
+      user.errors[:username].must_include "can't be blank"
+    end
+
+    it 'must have a unique username' do
+      FactoryGirl.create :user
+      user.valid?.wont_equal true
+      user.errors[:username].must_include "has already been taken"
+    end
+
     it 'must have a password'
     it 'must have matching passwords'
   end
