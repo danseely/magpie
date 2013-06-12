@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
                         :uniqueness => true
   validates :password,  :presence => true,
                         :confirmation => true
+
+  attr_accessible :email, :password, :username
 end
