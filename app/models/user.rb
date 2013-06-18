@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :wishlists
+
   attr_accessible :email, :password, :password_confirmation, :username
 
   validates :email,     :presence => true,
