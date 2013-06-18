@@ -1,6 +1,15 @@
 require "test_helper"
 
 describe User do
+  describe 'associations' do
+    it 'can have many wishlists' do
+      user = FactoryGirl.create :user
+      wishlist = FactoryGirl.create :wishlist
+      user.wishlists << wishlist
+      user.wishlists.count.must_equal 1
+    end
+  end
+
   describe 'validations' do
     let(:user) { FactoryGirl.build :user }
 
