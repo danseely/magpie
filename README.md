@@ -44,6 +44,17 @@ Week 3
 * Created route, model, migration, controller, and view
 * Finished form for new template
 * Finished scenario for valid user
-* Finished validations for email, username, and password
-* Display error on page if invalid
 * Created show view for a user
+
+Week 4
+------
+
+* Created failing feature test for duplicate username
+* Created failing model test for duplicate username
+* Added validation for duplicated username
+* Display error messages on new view
+* Created failing tests for all other validations for a User
+* Added validations needed to satisfy each test
+* Created failing model test for wishlist belongs to a user
+* Created migration for association
+* Created failing model test for user has many wishlists
