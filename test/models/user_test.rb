@@ -1,7 +1,6 @@
 require "test_helper"
 
 describe User do
-<<<<<<< HEAD
   describe 'associations' do
     it 'can have many wishlists' do
       user = FactoryGirl.create :user
@@ -55,6 +54,4 @@ describe User do
       user.errors[:password].must_include "doesn't match confirmation"
     end
   end
-=======
->>>>>>> Removed validation related code as we didn't get to it in week6
 end
