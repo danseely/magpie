@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create params[:user]
     render :new and return unless @user.valid?
+    auto_login @user
     redirect_to user_path @user
   end
 end
