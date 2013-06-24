@@ -19,7 +19,7 @@ feature 'Signin Feature Test' do
     fill_in 'Password', with: 'p@ssword'
     click_button 'Sign In'
 
-    current_path.must_equal signin_path
+    current_path.must_equal '/sessions'
     page.must_have_content "Invalid email or password"
   end
 end
