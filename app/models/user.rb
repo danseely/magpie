@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  authenticates_with_sorcery!
+
   has_many :wishlists
 
   attr_accessible :email, :password, :password_confirmation, :username
@@ -10,6 +12,4 @@ class User < ActiveRecord::Base
                         :uniqueness => true
   validates :password,  :presence => true,
                         :confirmation => true
-
-  attr_accessible :email, :password, :username
 end
