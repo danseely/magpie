@@ -11,6 +11,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'sorcery'
 
 group :development, :test do
   gem 'minitest-rails'
