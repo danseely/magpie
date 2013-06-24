@@ -12,10 +12,10 @@ end
 
 gem 'jquery-rails'
 
-
 group :development, :test do
   gem 'minitest-rails'
   gem 'factory_girl_rails'
+  gem 'm'
 end
 
 group :test do
