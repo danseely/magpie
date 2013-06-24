@@ -9,6 +9,6 @@ feature 'Signin Feature Test' do
     click_button 'Sign In'
 
     current_path.must_equal lists_path
-    page.must_have_content "Welcome #{user.first_name} #{user.last_name}"
+    page.must_have_content "Welcome #{user.name}"
   end
 end

@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 
   has_many :wishlists
 
-  attr_accessible :email, :password, :password_confirmation, :username
+  attr_accessible :email, :password, :password_confirmation, :username, :name
 
   validates :email,     :presence => true,
                         :uniqueness => true,
