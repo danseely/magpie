@@ -5,6 +5,7 @@ feature 'Displaying Wishlists Feature Test' do
     before do
       FactoryGirl.create :wishlist, name: 'Music', item_count: 12
       FactoryGirl.create :wishlist, name: 'Home', item_count: 32
+      signin FactoryGirl.create(:user)
       visit lists_path
     end
 
@@ -21,6 +22,7 @@ feature 'Displaying Wishlists Feature Test' do
 
   describe 'without wishlists' do
     scenario 'displaying an empty list' do
+      signin FactoryGirl.create(:user)
       visit lists_path
       page.must_have_content 'You currently do not have any wish lists'
     end
