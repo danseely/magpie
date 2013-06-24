@@ -5,6 +5,6 @@ class SessionsController < ApplicationController
 
   def create
     @user = login params[:user][:email], params[:user][:password]
-    redirect_to lists_path
+    redirect_to lists_path, notice: "Welcome #{@user.name}"
   end
 end
