@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
                         :format => { with: /\A[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+\z/  }
   validates :username,  :presence => true,
                         :uniqueness => true
-  validates :password,  :presence => true,
-                        :confirmation => true
+  validates :password,  :presence => true, if: :password,
+                        :confirmation => true, if: :password
 end
