@@ -71,3 +71,5 @@ Week5
 * Implemented the login method
 * Added failing scenario for invalid email address and password
 * Modified the SessionsController method to handle failing scenario
+* Created failing feature test for signing out
+* Added destroy method to the SessionsController and implemented
