@@ -58,3 +58,16 @@ Week 4
 * Created failing model test for wishlist belongs to a user
 * Created migration for association
 * Created failing model test for user has many wishlists
+
+Week5
+-----
+
+* Created failing feature test for signing in with valid credentials
+* Added sorcery to the Gemfile
+* Installed sorcery
+* Added migration for updated User model
+* Added SessionsController and new view
+* Added name to the User model
+* Implemented the login method
+* Added failing scenario for invalid email address and password
+* Modified the SessionsController method to handle failing scenario
