@@ -7,8 +7,8 @@ feature 'Signout Feature Test' do
   end
 
   scenario 'signing out clears the current user' do
-    click_link 'Sign out'
+    click_link 'Sign Out'
     current_path.must_equal signin_path
-    page.wont_have_content 'Sign out'
+    page.wont_have_content 'Sign Out'
   end
 end

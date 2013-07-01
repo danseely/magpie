@@ -22,12 +22,6 @@
   </div>
 <% end %>
 
-<% if logged_in? %>
-  <div class='profile'>
-    <%= link_to 'Sign out', signout_path %>
-  </div>
-<% end %>
-
 <div class='body-content'>
   <%= yield %>
 </div>
