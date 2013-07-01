@@ -8,7 +8,7 @@ feature 'Signup Feature Test' do
     fill_in 'Username', with: user.username
     fill_in 'Password', with: user.password
     fill_in 'Password confirmation', with: user.password
-    click_button 'Create User'
+    click_button 'Sign Up'
   end
 
   scenario 'signing up with valid data' do
