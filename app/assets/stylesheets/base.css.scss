@@ -1,0 +1,9 @@
+@import 'variables';
+
+body {
+  background-color: $color-orange;
+  background-image: url(bird.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right -145px bottom -140px;
+}
