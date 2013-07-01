@@ -1,8 +1,18 @@
+@import "variables";
+
 .body-content {
   border-top: solid 1px #c53f20;
+  padding-top: 50px;
   clear: both;
+  text-align: center;
 
   h1 {
     text-transform: lowercase;
+    color: $color-white;
+  }
+
+  h5 {
+    color: $color-burnt-orange;
+    padding-bottom: 20px;
   }
 }

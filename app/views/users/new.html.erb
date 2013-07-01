@@ -1,21 +1,43 @@
-<% if @user.errors.any? %>
-  <div class='error'>
-    <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+<div class='signup-content container'>
+  <div class='push-5 span-14'>
+    <h1>Sign Up!</h1>
+    <h5>It's quick, easy and free</h5>
 
-<%= form_for @user do |f| %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
-  <%= f.label :password %>
-  <%= f.text_field :password %>
-  <%= f.label :password_confirmation %>
-  <%= f.text_field :password_confirmation %>
-  <%= f.submit %>
-<% end %>
+    <% if @user.errors.any? %>
+      <div class='error'>
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <%= form_for @user do |f| %>
+      <div class='field full'>
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+      </div>
+
+      <div class='field full'>
+        <%= f.label :username %>
+        <%= f.text_field :username %>
+      </div>
+
+      <div class='field inline half'>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+      </div>
+
+      <div class='field inline last half'>
+        <%= f.label :password_confirmation %>
+        <%= f.password_field :password_confirmation %>
+      </div>
+
+      <div class='actions clear'>
+        <%= f.submit %>
+      </div>
+
+    <% end %>
+  </div>
+</div>

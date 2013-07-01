@@ -16,10 +16,15 @@ body {
   float: right;
 }
 
+.clear {
+  clear: both;
+}
+
 a {
   color: $color-white;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
+    color: $color-white;
   }
 }
