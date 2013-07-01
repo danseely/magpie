@@ -1,0 +1,16 @@
+$header-height: 105px;
+
+.header-content {
+  clear: both;
+  height: $header-height;
+
+  .right, .left {
+    height: $header-height;
+    line-height: $header-height;
+    padding: 0 10px;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+}

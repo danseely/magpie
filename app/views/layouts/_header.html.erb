@@ -1,0 +1,12 @@
+<div class='header-content'>
+  <div class='left'>
+    <%= link_to image_tag('birdhouse-with-text.png'), lists_path %>
+  </div>
+
+  <div class='right'>
+    <% if logged_in? %>
+    <% else %>
+      <%= link_to 'Sign In', signin_path %>
+    <% end %>
+  </div>
+</div>

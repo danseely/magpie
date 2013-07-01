@@ -7,3 +7,19 @@ body {
   background-attachment: fixed;
   background-position: right -145px bottom -140px;
 }
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
