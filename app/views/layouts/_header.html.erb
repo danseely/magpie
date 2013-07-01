@@ -5,6 +5,8 @@
 
   <div class='right'>
     <% if logged_in? %>
+    <% elsif params[:controller] == 'sessions' %>
+      <%= link_to 'Sign Up', signup_path %>
     <% else %>
       <%= link_to 'Sign In', signin_path %>
     <% end %>
