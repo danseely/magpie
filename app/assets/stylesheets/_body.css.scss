@@ -1,4 +1,5 @@
 @import "variables";
+@import "fonts";
 
 .body-content {
   border-top: solid 1px #c53f20;
@@ -7,12 +8,17 @@
   text-align: left;
 
   h1 {
+    font-size: 5em;
     text-transform: lowercase;
+    text-shadow: 2px 2px $color-burnt-orange;
     color: $color-white;
+    font-family: 'ProximaNovaBold';
   }
 
   h5 {
+    font-size: 1.8em;
     color: $color-burnt-orange;
     padding-bottom: 20px;
+    font-family: 'OpenSansBold';
   }
 }
