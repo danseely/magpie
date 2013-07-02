@@ -17,6 +17,7 @@ class ListsController < ApplicationController
 
   def create
     @list = Wishlist.create params[:wishlist].merge(user_id: current_user.id)
+    render :new and return unless @list.valid?
     redirect_to list_path @list
   end
 end
