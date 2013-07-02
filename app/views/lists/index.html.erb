@@ -4,8 +4,10 @@
     <ul>
       <% @lists.each do |list| %>
         <li>
-          <%= list.name %>
-          <span class='count'>(<%= list.item_count %>)</span>
+          <a href="<%= list_path(list) %>">
+            <%= list.name %>
+            <span class='count'>(<%= list.item_count %>)</span>
+          </a>
         </li>
       <% end %>
     </ul>
