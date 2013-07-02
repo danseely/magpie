@@ -15,8 +15,8 @@ feature 'Displaying Wishlists Feature Test' do
     end
 
     scenario 'displaying the wishlist item count' do
-      page.must_have_content '(12)'
-      page.must_have_content '(32)'
+      page.must_have_content '12'
+      page.must_have_content '32'
     end
   end
 
