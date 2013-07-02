@@ -1,17 +1,5 @@
 <div class='list-index-content container'>
-  <div class='span-5'>
-    <h2>Lists</h2> 
-    <ul>
-      <% @lists.each do |list| %>
-        <li>
-          <a href="<%= list_path(list) %>">
-            <%= list.name %>
-            <span class='count'><%= list.item_count %></span>
-          </a>
-        </li>
-      <% end %>
-    </ul>
-  </div>
+  <%= render partial: 'list' %>
 
   <div class='span-14 welcome'>
     <h1>Welcome!</h1>

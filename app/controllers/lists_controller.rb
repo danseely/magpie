@@ -7,6 +7,7 @@ class ListsController < ApplicationController
   end
 
   def show
+    @lists = Wishlist.order 'name'
     @list = Wishlist.find params[:id]
   end
 end

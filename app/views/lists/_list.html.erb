@@ -1,0 +1,13 @@
+<div class='span-5'>
+  <h2>Lists</h2> 
+  <ul>
+    <% @lists.each do |list| %>
+      <li>
+      <a href="<%= list_path(list) %>" class="<%= 'active' if @list && @list == list %>">
+          <%= list.name %>
+          <span class='count'><%= list.item_count %></span>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>

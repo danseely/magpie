@@ -1,6 +1,6 @@
 @import 'variables';
 
-.list-index-content {
+.list-index-content, .list-show-content {
   h2 {
     color: $color-burnt-orange;
     border-bottom: solid 1px $color-burnt-orange;
@@ -30,6 +30,9 @@
         color: $color-burnt-orange;
         &:hover {
           text-decoration: none;
+        }
+        &.active {
+          color: $color-white;
         }
       }
     }
