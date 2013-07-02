@@ -22,8 +22,8 @@ feature 'Signup Feature Test' do
   end
 
   scenario 'signing up with a duplicate username' do
-    FactoryGirl.create :user
-    user = FactoryGirl.build :user # Just use FactoryGirl to hold temporary data
+    FactoryGirl.create :user, username: 'johndoe'
+    user = FactoryGirl.build :user, username: 'johndoe' # Just use FactoryGirl to hold temporary data
     create_user(user)
     User.count.must_equal 1
     current_path.must_equal '/users'

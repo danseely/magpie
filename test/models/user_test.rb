@@ -20,7 +20,8 @@ describe User do
     end
 
     it 'must have a unique email address' do
-      FactoryGirl.create :user
+      FactoryGirl.create :user, email: 'johndoe@example.com'
+      user.email = 'johndoe@example.com'
       user.valid?.wont_equal true
       user.errors[:email].must_include "has already been taken"
     end
@@ -37,7 +38,8 @@ describe User do
     end
 
     it 'must have a unique username' do
-      FactoryGirl.create :user
+      FactoryGirl.create :user, username: 'johndoe'
+      user.username = 'johndoe'
       user.valid?.wont_equal true
       user.errors[:username].must_include "has already been taken"
     end

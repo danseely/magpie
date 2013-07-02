@@ -19,5 +19,11 @@ describe Wishlist do
       wishlist.valid?.wont_equal true
       wishlist.errors[:name].must_include "can't be blank"
     end
+
+    it 'must be associated with a user' do
+      wishlist.user_id = nil
+      wishlist.valid?.wont_equal true
+      wishlist.errors[:user].must_include "can't be blank"
+    end
   end
 end
