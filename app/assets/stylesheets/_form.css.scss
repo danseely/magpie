@@ -7,21 +7,6 @@ form {
     font-weight: normal;
   }
 
-  input[type=text], input[type=password] {
-    border: solid 1px $color-burnt-orange;
-    background: $color-burnt-orange;
-    color: $color-orange;
-    font-size: 16px;
-    padding: 10px;
-  }
-
-  input[type=submit] {
-    border: solid 1px $color-burnt-orange;
-    background: $color-burnt-orange;
-    color: $color-white;
-    padding: 10px 20px;
-  }
-
   .actions {
     border-top: solid 1px $color-burnt-orange;
     padding-top: 10px;
@@ -47,4 +32,19 @@ form {
   .field.half {
     width: 45%;
   }
+}
+
+input[type=text], input[type=password], a.btn {
+  border: solid 1px $color-burnt-orange;
+  background: $color-burnt-orange;
+  color: $color-orange;
+  font-size: 16px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  border: solid 1px $color-burnt-orange;
+  background: $color-burnt-orange;
+  color: $color-white;
+  padding: 10px 20px;
 }
