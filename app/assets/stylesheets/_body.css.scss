@@ -8,11 +8,13 @@
   text-align: left;
 
   h1 {
-    font-size: 5em;
+    font-size: 6em;
     text-transform: lowercase;
     text-shadow: 2px 2px $color-burnt-orange;
     color: $color-white;
     font-family: 'ProximaNovaBold';
+    letter-spacing: -3px;
+    margin-bottom: 0px;
   }
 
   h5 {

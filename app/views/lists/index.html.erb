@@ -1,7 +1,19 @@
-<div>Lists</div>
+<div class='list-index-content container'>
+  <div class='span-5'>
+    <h2>Lists</h2> 
+    <ul>
+      <% @lists.each do |list| %>
+        <li>
+          <%= list.name %>
+          <span class='count'>(<%= list.item_count %>)</span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
 
-<ol>
-  <% @lists.each do |list| %>
-    <li><%= list.name %> (<%= list.item_count %>)</li>
-  <% end %>
-</ol>
+  <div class='span-14 welcome'>
+    <h1>Welcome!</h1>
+    <h5> Go ahead, start adding lists</h5>
+    <%= image_tag 'left-arrow.png' %>
+  </div>
+</div>
