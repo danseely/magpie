@@ -3,9 +3,17 @@
     <%= link_to image_tag('birdhouse-with-text.png'), lists_path %>
   </div>
 
-  <div class='right'>
+  <div class='right authentication'>
     <% if logged_in? %>
-      <%= link_to 'Sign Out', signout_path %>
+      <div class='profile'>
+        <div class='left'>
+          <%= link_to image_tag('empty-profile.png'), user_path(current_user) %>
+        </div>
+        <div class='left profile-name'>
+          <%= link_to current_user.name, user_path(current_user) %>
+          <div class='signout'><%= link_to 'Sign Out', signout_path %></div>
+        </div>
+      </div>
     <% elsif params[:controller] == 'sessions' %>
       <%= link_to 'Sign Up', signup_path %>
     <% else %>

@@ -4,11 +4,22 @@ $header-height: 105px;
   clear: both;
   height: $header-height;
 
-  .right, .left {
-    height: $header-height;
+  .authentication {
     line-height: $header-height;
+    height: $header-height;
     padding: 0 20px;
     font-size: 16px;
+  }
+
+  .profile {
+    .profile-name {
+      padding-left: 20px;
+    }
+    .signout {
+      font-size: 12px;
+      line-height: 1em;
+      margin-top: -40px;
+    }
   }
 
   img {
