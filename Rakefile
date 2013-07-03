@@ -6,4 +6,4 @@ require File.expand_path('../config/application', __FILE__)
 
 Magpie::Application.load_tasks
 
-MiniTest::Rails::Testing.default_tasks << "features"
+MiniTest::Rails::Testing.default_tasks << "features" if defined?(MiniTest)
