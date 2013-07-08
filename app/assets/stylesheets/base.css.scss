@@ -30,7 +30,8 @@ a {
   color: $color-white;
   text-decoration: none;
   &:hover {
-    text-decoration: underline;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
     color: $color-white;
   }
 }
